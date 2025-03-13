@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import "react-toastify/ReactToastify.css"
-import "react-datepicker/dist/react-datepicker.css"
+import EmployeeTemplate from "@/components/employe template";
 
 export const metadata: Metadata = {
   title: "Acces by KAI",
@@ -15,10 +12,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
+    <EmployeeTemplate>{children}</EmployeeTemplate>
   );
 }
